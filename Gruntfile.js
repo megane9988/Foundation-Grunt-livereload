@@ -12,12 +12,10 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
     pkg: '<json:package.json>',
-
+    // ローカルサーバを設定
     connect: {
       livereload: {
         options: {
-          // これは connect のポート
-          // livereload のポートはデフォルトだと 35729
           port: 9001,
           middleware: function(connect, options) {
             return [lrSnippet, folderMount(connect, '.')];
@@ -25,22 +23,21 @@ module.exports = function(grunt) {
         }
       }
     },
-    compass: {                  // Task
-    dist: {                   // Target
-      options: {              // Target options
-        sassDir: 'scss',
-        cssDir: 'stylesheets',
+    // compassの設定
+    compass: {
+    dist: {
+      options: {
+        sassDir: 'scss', //このフォルダ以下の内容を
+        cssDir: 'stylesheets', //ココに書き出す
         environment: 'production'
         }
       }
     },
     // Configuration to be run (and then tested)
     regarde: {
-      // fred って名前がなんだかわからないけど、とりあえずそのままにしておいた
       fred: {
-        // 監視対象
-        files: ['scss/*.scss','*.html'],
-        tasks: ['compass','livereload']
+        files: ['scss/*.scss','*.html'],　// 監視対象
+        tasks: ['compass','livereload'] //監視対象が変更された際に実行する内容
       }
     },
     

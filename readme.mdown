@@ -8,3 +8,6 @@ Foundation5のcompass監視及びライブリロードのための一式
 - http://localhost:9001/ にて確認が可能
 - chromeの拡張機能 [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)を利用してライブリロードを実行
 
+
+## 参考サイト
+- [grunt を軽く触ってついでに livereload させてみた](http://atasatamatara.hatenablog.jp/entry/2013/03/25/205636)
