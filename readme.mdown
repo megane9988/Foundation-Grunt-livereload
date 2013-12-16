@@ -1,0 +1,10 @@
+Foundation5のcompass監視及びライブリロードのための一式
+
+- foundationの最新ファイルの取得
+	- [Getting Started With Sass](http://foundation.zurb.com/docs/sass.html)
+- gruntinit.sh を実行してGruntの環境構築
+- Gruntfile.jsをgit上のもので上書き
+- grunt とコマンドを打って監視開始
+- http://localhost:9001/ にて確認が可能
+- chromeの拡張機能 [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)を利用してライブリロードを実行
+
